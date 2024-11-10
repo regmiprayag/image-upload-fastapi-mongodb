@@ -17,7 +17,6 @@ from fastapi.staticfiles import StaticFiles
 
 app.mount("/uploads", StaticFiles(directory="uploads"), name="uploads")
 
-
 @app.get("/")
 def index():
     return {'message':"Hello User"}
